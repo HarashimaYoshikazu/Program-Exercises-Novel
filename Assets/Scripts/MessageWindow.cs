@@ -15,9 +15,9 @@ public class MessageWindow : MonoBehaviour
 
     private void Awake()
     {
-        if (!_nameText || !_letterText)
+        if (_windowPanel||!_nameText || !_letterText)
         {
-            Debug.LogError($"Textコンポーネントがアタッチされていません：NameText{_nameText},LetterText{_letterText}");
+            Debug.LogError($"Textコンポーネントがアタッチされていません：WindowPanel{_windowPanel}NameText{_nameText},LetterText{_letterText}");
         }
     }
 }
