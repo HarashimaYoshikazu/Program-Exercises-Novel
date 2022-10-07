@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 151320434}
   - component: {fileID: 151320436}
   - component: {fileID: 151320435}
+  - component: {fileID: 151320437}
   m_Layer: 5
   m_Name: MessageWindow
   m_TagString: Untagged
@@ -200,6 +201,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151320433}
   m_CullTransparentMesh: 1
+--- !u!114 &151320437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151320433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860caab446f4ae843a7382a2c6be98fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _windowPanel: {fileID: 1059658752}
+  _nameText: {fileID: 568684697}
+  _letterText: {fileID: 1564587242}
 --- !u!1 &175529409
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610765124}
   m_Layer: 5
-  m_Name: Charcter
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
