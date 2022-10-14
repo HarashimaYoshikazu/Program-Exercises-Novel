@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MessageWindow : MonoBehaviour
 {
@@ -9,9 +10,9 @@ public class MessageWindow : MonoBehaviour
     [SerializeField]
     GameObject _windowPanel = null;
     [SerializeField]
-    Text _nameText = null;
+    TMP_Text _nameText = null;
     [SerializeField]
-    Text _letterText = null;
+    TMP_Text _letterText = null;
 
     [Header("デバッグ")]
     [SerializeField]
