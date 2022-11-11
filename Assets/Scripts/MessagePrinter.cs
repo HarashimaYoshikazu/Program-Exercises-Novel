@@ -53,4 +53,22 @@ public class MessagePrinter : MonoBehaviour
         if (_message is null or { Length: 0 }) { _interval = 0; }
         else { _interval = _speed / _message.Length; }
     }
+    public bool IsPrinting
+    {
+        get
+        {
+            if (_message is null or { Length: 0 })
+            {
+                return false;
+            }
+            return _currentIndex < _message.Length - 1;
+        }
+    }
+    public void Skip()
+    {
+        if (_message is null) { return; }
+
+        _currentIndex = _message.Length;
+        _textUi.text = _message;
+    }
 }
